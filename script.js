@@ -11,6 +11,6 @@ let number = document.querySelectorAll('.number')
 let outcome = document.getElementById('outcome')
 for(let i = 0; i < number.length; i++){
      number[i].addEventListener('click', ()=>{
-          outcome.innerHTML =`You selected ${i++} out of 5`
+          outcome.innerHTML =`You selected ${number[i].innerHTML} out of 5`
      })  
 }
